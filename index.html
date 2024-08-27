@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Decodificador de texto</title>
+</head>
+<body>
+  <img id="logo" src="./img/logo-alura.svg" width="120px" height="48px" alt="Logo Alura">
+  <main>
+    <form>
+      <textarea id="input-text" placeholder="Digite seu texto"></textarea>
+      <p>
+        <img src="./img/warning.svg" alt="ícone de informação">
+        Apenas letras minúsculas e sem acento.
+      </p>
+      <div class="contain-buttons">
+        <button type="submit" id="encrypt">Criptografar</button>
+        <button type="submit" id="decrypt">Descriptografar</button>
+      </div>
+    </form>
+  </main>
+  <aside>
+    <img src="./img/looking.svg" width="336px" height="304px" alt="Imagem de um menino olhando uma lupa">
+    <strong>Nenhuma mensagem encontrada</strong>
+    <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
+  </aside>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
